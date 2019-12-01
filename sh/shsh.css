@@ -1,0 +1,14 @@
+﻿h2 {
+    text-align: center;
+    border-bottom: 1px dashed black;
+}
+
+div {
+    width: 400px;
+    margin: 20px auto;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
