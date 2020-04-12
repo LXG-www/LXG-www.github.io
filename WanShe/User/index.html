@@ -14,16 +14,61 @@
 
         body {
             background-color: #dafbe7;
+            color: #545359;
+            font-family: "幼圆";
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            /* line-height: 3px; */
         }
 
-        .title {
+        body span {}
+
+        body .title {
             background-color: #50c7f8;
+            padding-left: 7%;
+        }
+
+        body .title span {
+            margin: 0px 1px;
+        }
+
+        body .body {
+            padding-top: 5px;
+            padding-left: 7%;
+        }
+
+        body .body span {
+            margin-top: 1px;
         }
     </style>
+    <script>
+        function Init(event) {
+
+        }
+    </script>
 </head>
 
 <body>
-
+    <div class="title">
+        <span>
+            <h1>欢迎来到万舍</h1>
+        </span>
+    </div>
+    <div class="body">
+        <span>
+            <h2>
+                <span id="hello">早上好</span>,欢迎使用万舍<br />
+                <span style="padding-left: 10%;">这是您的第一次启动</span><br />
+                我们需要确认一些事宜<br />
+                <br /><br />
+                使用这个应用程序的人是:<br />
+                <br /><br />
+            </h2>
+        </span>
+        <div style="width: 100%;  background-color: #545359;">
+        </div>
+    </div>
 </body>
 
 </html>
