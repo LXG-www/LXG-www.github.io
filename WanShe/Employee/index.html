@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万舍</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            background-color: white;
+            color: #545359;
+            font-family: "幼圆";
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            height: 100%;
+            /* line-height: 3px; */
+        }
+
+        body span {}
+
+        body .title {
+            background-color: #444444;
+            padding-left: 7%;
+        }
+
+        body .title span {
+            color: #d1d1d1;
+            margin: 0px 1px;
+        }
+
+        body .body {
+            background-color: #d2f1fd;
+            padding-top: 5px;
+            padding-left: 7%;
+            height: 100%;
+        }
+
+        body .body span {
+            margin-top: 1px;
+        }
+
+        .Click_Block {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            width: 100%;
+            height: 10%;
+            /* position: relative; */
+        }
+
+        .Click_Block div {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #444444;
+            border-radius: 10px;
+        }
+
+        .Click_Block a:nth-of-type(1) div {
+            width: 30%;
+            height: 10%;
+            min-width: 158px;
+            min-height: 64px;
+        }
+
+        .Click_Block a:nth-of-type(2) div {
+            width: 40%;
+            height: 5%;
+            min-width: 217px;
+            min-height: 32px;
+        }
+
+        .Click_Block a {
+            text-decoration: none;
+            color: #d1d1d1;
+        }
+
+        .Click_Block a:link {
+            color: #d1d1d1;
+        }
+
+        .Click_Block a:hover {
+            color: #d1d1d1;
+        }
+
+        .Click_Block a:visited {
+            color: #d1d1d1;
+        }
+
+        .Click_Block a:active {
+            color: #d1d1d1;
+        }
+    </style>
+    <script>
+        function Init(event) {
+            var Time_Hours = new Date().getHours();
+            var helloText = "您好";
+            console.log(Time_Hours);
+            if (Time_Hours > 0) {
+                if (Time_Hours > 6) {
+                    if (Time_Hours > 7) {
+                        if (Time_Hours > 11) {
+                            if (Time_Hours > 13) {
+                                if (Time_Hours > 18) {
+                                    if (Time_Hours > 22) {
+                                        if (Time_Hours > 23) {
+                                            helloText = "这里是十三月,32号,星期八,24点"
+                                        } else {
+                                            helloText = "很晚了,要睡觉了";
+                                        }
+                                    } else {
+                                        helloText = "晚上好";
+                                    }
+                                } else {
+                                    helloText = "下午好";
+                                }
+                            } else {
+                                helloText = "中午好";
+                            }
+                        } else {
+                            helloText = "早上好";
+                        }
+                    } else {
+                        helloText = "早起是美好一天的开始";
+                    }
+                } else {
+                    helloText = "现在时间太晚了,看手机对眼睛不好";
+                }
+            } else {
+                helloText = "再努力一些,你就能时光倒流了";
+            }
+            document.getElementById('hello').innerText = helloText;
+        }
+    </script>
+</head>
+
+<body onload="Init()">
+    <div class="title">
+        <span>
+            <h1>欢迎来到万舍</h1>
+        </span>
+    </div>
+    <div class="body">
+        <span>
+            <h2>
+                <span id="hello">你好</span>,欢迎使用万舍<br />
+                <span style="padding-left: 10%;">这是您的第一次启动</span><br />
+                我们需要确认一些事宜<br />
+                <br /><br />
+                使用这个应用程序的人是:<br />
+                <br /><br />
+            </h2>
+        </span>
+        <div class="Click_Block">
+            <!-- 点击区域 -->
+            <a href="#">
+                <div>
+                    <h3>老人</h3>
+                </div>
+            </a>
+            <br /> <br /><br />
+            <a href="#">
+                <div>
+                    <h3>子女</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
