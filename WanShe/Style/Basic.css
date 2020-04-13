@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: white;
+    color: #545359;
+    font-family: "YouYuan";
+    /* font-family: "幼圆"; */
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    height: 100%;
+    /* line-height: 3px; */
+}
+
+body .title {
+    background-color: #50c7f8;
+    padding-left: 7%;
+}
+
+body .title span {
+    margin: 0px 1px;
+}
+
+body .body {
+    background-color: #dafbe7;
+    padding-top: 5px;
+    height: 100%;
+}
+
+body .body h2 {
+    padding-left: 7%;
+}
+
+body .body span {
+    margin-top: 1px;
+}

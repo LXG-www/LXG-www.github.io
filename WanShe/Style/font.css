@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "YouYuan";
+    src: url("../assets/font/SIMYOU.eto");
+    src: url("../assets/font/SIMYOU.eto") format("woff"), url("../assets/font/SIMYOU.ttf") format("truetype"), url("../assets/font/SIMYOU.svg") format("svg");
+}
